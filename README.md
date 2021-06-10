@@ -1,2 +1,2 @@
 # PracticalTask
-Practical task LeverX IT courses
+Practical task LeverX IT courses 

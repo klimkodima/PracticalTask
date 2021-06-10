@@ -44,6 +44,7 @@ function startTest() {
   let taskForm = createForm();                             // Создаем переменную при помощи функции
   taskForm.setAttribute("onsubmit", "checkForm();return false");       //Устанавливаем  атрибут для вызова функции проверки формы при отправке формы.После выполнения функции задание остается на экране
   taskForm.setAttribute("name", "Task");
+  taskForm.setAttribute("class", "bg-light text-dark");
   let ol = createOl();
   ol.setAttribute("name", "questions");
   taskForm.append(ol);
@@ -71,6 +72,7 @@ function startTest() {
   }
   let submit = createCheckbox();    // Создаем кнопку для отправки формы функцией с изменением типа элемента <input сheckbox>  на <input submit>
   submit.type = "submit";
+  submit.setAttribute("class", "btn  btn-outline-dark btn-lg");
   taskForm.append(submit);
   Questions.style.visibility = "visible";
   
