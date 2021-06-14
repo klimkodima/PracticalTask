@@ -37,14 +37,12 @@ function createBreak() {
 	создания объектов тест, вопросы, вопрос, ответы, правильные ответы. 
 */
 function startTest() {
-  let createTaskButton = document.getElementById("createTask");  // Инициируем созданную переменную ссылкой на элемент по его идентификатору
   let checkTaskButton = document.getElementById("checkTask");
-  createTaskButton.setAttribute("disabled", "disabled");   //Устанавливаем  атрибут disabled кнопки , делая её отключённой
   checkTaskButton.setAttribute("disabled", "disabled");
   let taskForm = createForm();                             // Создаем переменную при помощи функции
   taskForm.setAttribute("onsubmit", "checkForm();return false");       //Устанавливаем  атрибут для вызова функции проверки формы при отправке формы.После выполнения функции задание остается на экране
   taskForm.setAttribute("name", "Task");
-  taskForm.setAttribute("class", "bg-light text-dark");
+  taskForm.setAttribute("class", "");
   let ol = createOl();
   ol.setAttribute("name", "questions");
   taskForm.append(ol);
@@ -72,7 +70,7 @@ function startTest() {
   }
   let submit = createCheckbox();    // Создаем кнопку для отправки формы функцией с изменением типа элемента <input сheckbox>  на <input submit>
   submit.type = "submit";
-  submit.setAttribute("class", "btn  btn-outline-dark btn-lg");
+  submit.setAttribute("class", "btn btn-custom color-2");
   taskForm.append(submit);
   Questions.style.visibility = "visible";
   
