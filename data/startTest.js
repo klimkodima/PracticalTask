@@ -42,7 +42,7 @@ function startTest() {
   let taskForm = createForm();                             // Создаем переменную при помощи функции
   taskForm.setAttribute("onsubmit", "checkForm();return false");       //Устанавливаем  атрибут для вызова функции проверки формы при отправке формы.После выполнения функции задание остается на экране
   taskForm.setAttribute("name", "Task");
-  taskForm.setAttribute("class", "");
+  taskForm.setAttribute("class", "overflow-auto");
   let ol = createOl();
   ol.setAttribute("name", "questions");
   taskForm.append(ol);
@@ -68,10 +68,9 @@ function startTest() {
       questionLi.append(createBreak(), answersLabel);
     }
   }
-  let submit = createCheckbox();    // Создаем кнопку для отправки формы функцией с изменением типа элемента <input сheckbox>  на <input submit>
-  submit.type = "submit";
-  submit.setAttribute("class", "btn btn-custom color-2");
-  taskForm.append(submit);
+  let send = createCheckbox();    // Создаем кнопку для отправки формы функцией с изменением типа элемента <input сheckbox>  на <input submit>
+  send.type = "submit";
+  send.setAttribute("class", "btn btn-custom color-2");
+  taskForm.append(send);
   Questions.style.visibility = "visible";
-  
 }

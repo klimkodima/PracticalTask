@@ -53,7 +53,7 @@
                                 <ul id="mainmenu" class="scrollnav">
                                     <li><a href="#section-resume">Добавить вопрос</a></li>
                                     <li></li>
-                                    <li><a href="#section-about">Начать тест</a></li>
+                                    <li><a href="#section-blog">Начать тест</a></li>
                                     <li></li>  
                                     <li><a href="#section-contact">Контакты</a></li>
                                     <li></li>
@@ -78,7 +78,7 @@
         <!-- header close -->
         
         <!-- content begin -->
-        <div class="no-bottom no-top dark">
+        <div class=" dark">
             <div id="top"></div>
             <!-- section begin -->
             <section id="section-main" class="vertical-center text-light" data-bgimage="url(data/images/background/2.jpg) top">
@@ -109,8 +109,6 @@
 							<h6 class="title">- позволять вводить цифры, отличные от 1-4; </h6>
 							<h6 class="title">- повторять введенные цифры; </h6>
 							<h6 class="title">- вводить знаки, отличные от “,”. </h6>
-							
-                            <div class="title-underline"></div>
                         </div>
                     </div>
                     <div class="row">
@@ -123,12 +121,11 @@
                 </div>
             </section>
             <!-- section close -->
-
-            <!-- section begin -->
-            <section id="section-about" class="dark">
+ <!-- section begin -->
+            <section id="section-blog" class="dark" style="overflow: auto">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 wow fadeInRight">
+                        <div class="col-md-12">
 						<h2 class="title">Тест</h2>
                             <h4 class="title">
 							Важно: внимательно прочитайте этот документ и убедитесь, что на момент отправки Ваша программа полностью соответствует всем требованиям.
@@ -140,19 +137,29 @@
                             <div class="title-underline"></div>
                         </div>
                     </div>
-					<div class="row">
+					<div class="row ">
                       <div id="submit">
                                 <input type="submit" id="checkTask" value="Начать тест" class="btn btn-custom color-2" onclick="startTest()">
                             </div>  
                     </div>   
-				<div class="row">
-					<div class="col-md-12" id ="Questions">
-					</div>				
+					<div class="row " >
+						<div class="col-md-12 " id ="Questions">
+											
 				 </div> 
-                    
+                    <div class="row ">
+						<div class="col-md-12" >
+						<pre id ="result" style="font-size:22 px; color:white;"></pre>
+						</div>				
+				 </div> 
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-about" class="dark">
+                
                     <div class="row">
                         
-                        <div class="col-md-12">
+                        <div class="col-md-11">
                             <div >
                                 <blockquote class="testimonial-big text-light">
                                     <img src="images/people/4.jpg" alt="" />
@@ -208,6 +215,7 @@
                     </form>
                 </div>
             </section>
+			
         </div>
         <!-- content close -->
     </div>
@@ -228,8 +236,7 @@
     <script src="data/js/jquery.plugin.js"></script>
     <script src="data/js/typed.js"></script>
     <script src="data/js/typed-custom.js"></script>
-    <script src="data/js/designesia.js"></script>
-	
+    <script src="data/js/designesia.js"></script>	
 <script type="text/javascript" src="data/data.js"></script>
 <script type="text/javascript" src="data/startTest.js"></script>
 <script type="text/javascript" src="data/createQuestion.js"></script>
